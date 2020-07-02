@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+    chaudha4@abhishek-Lenovo-ubuntu:~/projects$ pwd
+    /home/chaudha4/projects
+    chaudha4@abhishek-Lenovo-ubuntu:~/projects$ npx --version
+    6.14.5
+    chaudha4@abhishek-Lenovo-ubuntu:~/projects$ npx create-react-app random-quotes
+    npx: installed 98 in 8.307s
+
+    Creating a new React app in /home/chaudha4/projects/random-quotes.
+
+
+This project generates a random quote. Built using React and a public API to access the random quote.
+
 ## Available Scripts
 
 In the project directory, you can run:

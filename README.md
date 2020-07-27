@@ -11,6 +11,32 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     Creating a new React app in /home/chaudha4/projects/random-quotes.
 
 
+## Create/Update a package.json file
+```
+npm init
+```
+
+## Installing from package.json
+```
+npm install 
+```
+
+## List of installed packages:
+```
+npm list
+```
+
+## List outdated packages
+```
+npm outdated
+```
+
+## Fix vulnerabilities:
+```
+npm audit fix
+```
+
+
 This project generates a random quote. Built using React and a public API to access the random quote.
 
 ## Available Scripts

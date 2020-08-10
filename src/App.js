@@ -11,7 +11,6 @@ function App() {
   // Similar to instance variable in a class. Essentially, useRef 
   // is like a “box” that can hold a mutable value in its .current property.
 
-  const indx = useRef(1);
   const myTimer = useRef(null);
 
   /**
@@ -36,18 +35,17 @@ function App() {
       .then(function (data) {
         console.log(JSON.stringify(data));
         setDb(data);  // Data is an array of structure that conatins text and author
-        setQuote(data[0]);  // Init the quotes to the first element
+
+        const index = Math.floor(Math.random() * data.length);  // Random Pick
+        setQuote(data[index]);  // Init the quotes to the first element
       });
   }, []);
 
   //const getNewQuote = () => {
   function getNewQuote() {
-
-    setQuote(db[indx.current]); // Access the current value and then increment it.
-
-    indx.current = (indx.current < db.length - 1) ? indx.current + 1 : 0;
-
-    console.log("Index is now %s and max is %s", indx.current, db.length);
+    const index = Math.floor(Math.random() * db.length);
+    console.log("Index is now %s and max is %s", index, db.length);
+    setQuote(db[index]);
   }
 
   const playQuote = () => {

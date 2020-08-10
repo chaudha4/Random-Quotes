@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 
-  console.log("Entering function App");
+  //console.log("Entering function App");
 
   const [quote, setQuote] = useState([]);
   const [db, setDb] = useState(0);
@@ -29,7 +29,6 @@ function App() {
    */
 
   useEffect(() => {
-    console.log("fetch");
     fetch("https://type.fit/api/quotes")
       .then(function (response) {
         return response.json();
@@ -41,7 +40,9 @@ function App() {
       });
   }, []);
 
-  const getNewQuote = () => {
+  //const getNewQuote = () => {
+  function getNewQuote() {
+
     setQuote(db[indx.current]); // Access the current value and then increment it.
 
     indx.current = (indx.current < db.length - 1) ? indx.current + 1 : 0;

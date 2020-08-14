@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/chaudha4/Random-Quotes.svg?branch=master)](https://travis-ci.org/chaudha4/Random-Quotes)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f4fa13f-182e-4051-81fe-1d2315b253ba/deploy-status)](https://app.netlify.com/sites/ecstatic-wright-743cab/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
